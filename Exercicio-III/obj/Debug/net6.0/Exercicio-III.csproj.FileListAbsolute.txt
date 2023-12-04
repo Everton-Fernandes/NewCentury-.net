@@ -1,0 +1,15 @@
+D:\Projetos\DesafioNewCentury\Exercicio-III\bin\Debug\net6.0\Exercicio-III.exe
+D:\Projetos\DesafioNewCentury\Exercicio-III\bin\Debug\net6.0\Exercicio-III.deps.json
+D:\Projetos\DesafioNewCentury\Exercicio-III\bin\Debug\net6.0\Exercicio-III.runtimeconfig.json
+D:\Projetos\DesafioNewCentury\Exercicio-III\bin\Debug\net6.0\Exercicio-III.dll
+D:\Projetos\DesafioNewCentury\Exercicio-III\bin\Debug\net6.0\Exercicio-III.pdb
+D:\Projetos\DesafioNewCentury\Exercicio-III\obj\Debug\net6.0\Exercicio-III.csproj.AssemblyReference.cache
+D:\Projetos\DesafioNewCentury\Exercicio-III\obj\Debug\net6.0\Exercicio-III.GeneratedMSBuildEditorConfig.editorconfig
+D:\Projetos\DesafioNewCentury\Exercicio-III\obj\Debug\net6.0\Exercicio-III.AssemblyInfoInputs.cache
+D:\Projetos\DesafioNewCentury\Exercicio-III\obj\Debug\net6.0\Exercicio-III.AssemblyInfo.cs
+D:\Projetos\DesafioNewCentury\Exercicio-III\obj\Debug\net6.0\Exercicio-III.csproj.CoreCompileInputs.cache
+D:\Projetos\DesafioNewCentury\Exercicio-III\obj\Debug\net6.0\Exercicio-III.dll
+D:\Projetos\DesafioNewCentury\Exercicio-III\obj\Debug\net6.0\refint\Exercicio-III.dll
+D:\Projetos\DesafioNewCentury\Exercicio-III\obj\Debug\net6.0\Exercicio-III.pdb
+D:\Projetos\DesafioNewCentury\Exercicio-III\obj\Debug\net6.0\Exercicio-III.genruntimeconfig.cache
+D:\Projetos\DesafioNewCentury\Exercicio-III\obj\Debug\net6.0\ref\Exercicio-III.dll
