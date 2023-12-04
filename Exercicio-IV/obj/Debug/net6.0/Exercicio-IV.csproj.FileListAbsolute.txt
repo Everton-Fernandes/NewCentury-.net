@@ -1,0 +1,15 @@
+D:\Projetos\DesafioNewCentury\Exercicio-IV\bin\Debug\net6.0\Exercicio-IV.exe
+D:\Projetos\DesafioNewCentury\Exercicio-IV\bin\Debug\net6.0\Exercicio-IV.deps.json
+D:\Projetos\DesafioNewCentury\Exercicio-IV\bin\Debug\net6.0\Exercicio-IV.runtimeconfig.json
+D:\Projetos\DesafioNewCentury\Exercicio-IV\bin\Debug\net6.0\Exercicio-IV.dll
+D:\Projetos\DesafioNewCentury\Exercicio-IV\bin\Debug\net6.0\Exercicio-IV.pdb
+D:\Projetos\DesafioNewCentury\Exercicio-IV\obj\Debug\net6.0\Exercicio-IV.csproj.AssemblyReference.cache
+D:\Projetos\DesafioNewCentury\Exercicio-IV\obj\Debug\net6.0\Exercicio-IV.GeneratedMSBuildEditorConfig.editorconfig
+D:\Projetos\DesafioNewCentury\Exercicio-IV\obj\Debug\net6.0\Exercicio-IV.AssemblyInfoInputs.cache
+D:\Projetos\DesafioNewCentury\Exercicio-IV\obj\Debug\net6.0\Exercicio-IV.AssemblyInfo.cs
+D:\Projetos\DesafioNewCentury\Exercicio-IV\obj\Debug\net6.0\Exercicio-IV.csproj.CoreCompileInputs.cache
+D:\Projetos\DesafioNewCentury\Exercicio-IV\obj\Debug\net6.0\Exercicio-IV.dll
+D:\Projetos\DesafioNewCentury\Exercicio-IV\obj\Debug\net6.0\refint\Exercicio-IV.dll
+D:\Projetos\DesafioNewCentury\Exercicio-IV\obj\Debug\net6.0\Exercicio-IV.pdb
+D:\Projetos\DesafioNewCentury\Exercicio-IV\obj\Debug\net6.0\Exercicio-IV.genruntimeconfig.cache
+D:\Projetos\DesafioNewCentury\Exercicio-IV\obj\Debug\net6.0\ref\Exercicio-IV.dll
