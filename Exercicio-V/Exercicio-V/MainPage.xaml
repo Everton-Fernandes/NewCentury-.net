@@ -87,7 +87,7 @@
                                 TextColor="#323232" />
                             <Span
                                 FontSize="30"
-                                Text="{Binding Valor, Source={x:Reference exercicioV}}"
+                                Text="{Binding TaxaVitorias, Source={x:Reference exercicioV}}"
                                 TextColor="#323232" />
                             <Span
                                 FontSize="30"
@@ -111,7 +111,7 @@
                                 TextColor="#323232" />
                             <Span
                                 FontSize="30"
-                                Text="{Binding Valor, Source={x:Reference exercicioV}}"
+                                Text="{Binding TaxaDerrota, Source={x:Reference exercicioV}}"
                                 TextColor="#323232" />
                         </FormattedString>
                     </Label.FormattedText>
@@ -191,16 +191,18 @@
                 Padding="0"
                 BorderColor="#323232"
                 CornerRadius="10"
-                HeightRequest="800"
+                HeightRequest="500"
                 HorizontalOptions="Center"
                 WidthRequest="800">
-                <ListView
+                <CollectionView
                     x:Name="historicoList"
                     BackgroundColor="#DCDCDC"
-                    SeparatorColor="#323232">
-                    <ListView.ItemTemplate>
+                    ItemsSource="{Binding HistoricoList,Source={x:Reference exercicioV}}"
+                    EmptyView="Nenhum item encontrado"
+                    HorizontalOptions="Center"
+                    VerticalOptions="Center">
+                    <CollectionView.ItemTemplate>
                         <DataTemplate>
-                            <ViewCell>
                                 <Grid ColumnDefinitions="*,*,*,*">
                                     <Label
                                         Grid.Column="0"
@@ -231,10 +233,9 @@
                                         Text="{Binding Resultado}"
                                         TextColor="#323232" />
                                 </Grid>
-                            </ViewCell>
                         </DataTemplate>
-                    </ListView.ItemTemplate>
-                </ListView>
+                    </CollectionView.ItemTemplate>
+                </CollectionView>
             </Frame>
         </StackLayout>
     </ScrollView>

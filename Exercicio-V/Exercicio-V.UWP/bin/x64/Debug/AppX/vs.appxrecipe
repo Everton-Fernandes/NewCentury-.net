@@ -30,13 +30,13 @@
     <AppXManifest Include="D:\Projetos\DesafioNewCentury\Exercicio-V\Exercicio-V.UWP\bin\x64\Debug\Core\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2023-12-05T01:23:04.471</Modified>
+      <Modified>2023-12-05T16:19:00.406</Modified>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
     <AppxPackagedFile Include="D:\Projetos\DesafioNewCentury\Exercicio-V\Exercicio-V.UWP\bin\x64\Debug\Exercicio-V.UWP.exe">
       <PackagePath>entrypoint\Exercicio-V.UWP.exe</PackagePath>
-      <Modified>2023-12-05T01:04:48.600</Modified>
+      <Modified>2023-12-05T14:49:44.693</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Everton\.nuget\packages\runtime.win10-x64.microsoft.netcore.universalwindowsplatform\6.2.12\runtimes\win10-x64\lib\uap10.0.15138\System.Runtime.dll">
       <PackagePath>System.Runtime.dll</PackagePath>
@@ -68,7 +68,7 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\Projetos\DesafioNewCentury\Exercicio-V\Exercicio-V\bin\Debug\netstandard2.0\Exercicio_V.dll">
       <PackagePath>Exercicio_V.dll</PackagePath>
-      <Modified>2023-12-05T01:22:57.870</Modified>
+      <Modified>2023-12-05T16:18:53.076</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Everton\.nuget\packages\win2d.uwp\1.20.0\lib\uap10.0\Microsoft.Graphics.Canvas.winmd">
       <PackagePath>Microsoft.Graphics.Canvas.winmd</PackagePath>
@@ -227,11 +227,11 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\Projetos\DesafioNewCentury\Exercicio-V\Exercicio-V.UWP\bin\x64\Debug\App.xbf">
       <PackagePath>App.xbf</PackagePath>
-      <Modified>2023-12-05T01:23:03.408</Modified>
+      <Modified>2023-12-05T16:18:59.021</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\Projetos\DesafioNewCentury\Exercicio-V\Exercicio-V.UWP\bin\x64\Debug\MainPage.xbf">
       <PackagePath>MainPage.xbf</PackagePath>
-      <Modified>2023-12-05T01:23:03.408</Modified>
+      <Modified>2023-12-05T16:18:59.021</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Program Files %28x86%29\Microsoft SDKs\Windows Kits\10\ExtensionSDKs\Microsoft.UniversalCRT.Debug\10.0.22000.0\\redist\Debug\X64\ucrtbased.dll">
       <PackagePath>ucrtbased.dll</PackagePath>
@@ -247,11 +247,11 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\Projetos\DesafioNewCentury\Exercicio-V\Exercicio-V.UWP\bin\x64\Debug\resources.pri">
       <PackagePath>resources.pri</PackagePath>
-      <Modified>2023-12-04T18:10:40.377</Modified>
+      <Modified>2023-12-05T14:42:53.126</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\Projetos\DesafioNewCentury\Exercicio-V\Exercicio-V.UWP\bin\x64\Debug\Core\Exercicio-V.UWP.exe">
       <PackagePath>Exercicio-V.UWP.exe</PackagePath>
-      <Modified>2023-12-05T01:23:04.468</Modified>
+      <Modified>2023-12-05T16:19:00.401</Modified>
     </AppxPackagedFile>
   </ItemGroup>
   <ItemGroup>

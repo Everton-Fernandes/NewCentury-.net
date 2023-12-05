@@ -16,9 +16,13 @@ namespace Exercicio_V
 
         public int TotalTentativas { get; set; }
 
+        public int TotalVitorias { get; set; }
+
+        public int TotalDerrotas { get; set; }
+
         public int RestTentativas { get; set; }
 
-        public int Count { get; set; } = 0;
+        public int Count { get; set; } = 1;
 
         public int NumeroSecreto { get; set; }
 
@@ -68,20 +72,22 @@ namespace Exercicio_V
                     Resultado = resultado
                 });
 
+                TotalVitorias++;
+
                 return;
             }
             else
             {
                 if (Count < TotalTentativas)
                 {
-                    this.Menssagen = $"Tentativas restantes: {RestTentativas - 1} ";
+                    this.Menssagen = $" Errou! Tentativas restantes: {RestTentativas - 1} ";
                     Count++;
                     RestTentativas--;
 
                 }
                 else
                 {
-                    this.Menssagen = $"Você perdeu! Acabaram as tentativas.";
+                    this.Menssagen = $"Você perdeu! Acabaram as tentativas. Escolha uma dificuldade e tente novamente!";
                     historicoTentativas.Add(new HistoricoTentativas
                     {
                         CodJogador = jogadorEscolha,
@@ -89,6 +95,7 @@ namespace Exercicio_V
                         DataHoraTentativa = DateTime.Now,
                         Resultado = resultado
                     });
+                    TotalDerrotas++;
                 }
                 return;
             }

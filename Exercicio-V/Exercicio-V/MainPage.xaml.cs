@@ -13,8 +13,6 @@ namespace Exercicio_V
         public MainPage()
         {
             InitializeComponent();
-            Valor = 0;
-            Rank = "S";
 
             this.Jogo = new JogoAdivinhacao(0); //default é medio;
             this.DificuldadeETentativas = new Dictionary<string, int>();
@@ -55,7 +53,13 @@ namespace Exercicio_V
 
         public List<HistoricoTentativas> HistoricoList { get; set; }
 
-        public int Valor { get; set; }
+        public int Valor { get; set; } = 0;
+
+        public int QuantJogo { get; set; } = 0;
+
+        public float TaxaVitorias { get; set; } = 0;
+
+        public int TaxaDerrota { get; set; } = 0;
 
         public int Jogador { get; set; }
 
@@ -112,6 +116,9 @@ namespace Exercicio_V
         {
             Jogo.TotalTentativas = Tentativas[0];
             Jogo.RestTentativas = Tentativas[0];
+            Count = 0;
+            QuantJogo++;
+
             if (BoolFacil == true)
             {
                 BoolFacil = false;
@@ -130,6 +137,8 @@ namespace Exercicio_V
         {
             Jogo.TotalTentativas = Tentativas[1];
             Jogo.RestTentativas = Tentativas[1];
+            Count = 0;
+            QuantJogo++;
 
             if (BoolMedio == true)
             {
@@ -149,6 +158,8 @@ namespace Exercicio_V
         {
             Jogo.TotalTentativas = Tentativas[2];
             Jogo.RestTentativas = Tentativas[2];
+            Count = 0;
+            QuantJogo++;
 
             if (BoolDificil == true)
             {
@@ -162,6 +173,13 @@ namespace Exercicio_V
                 btnDificil.BackgroundColor = Color.FromHex("#90989F");
                 btnDificil.TextColor = Color.FromHex("#FAFAFA");
             }
+        }
+
+        private void CarregarLista()
+        {
+            HistoricoList.Add(Jogo.historicoTentativas.FirstOrDefault());
+            historicoList.ItemsSource = HistoricoList;
+            OnPropertyChanged(nameof(HistoricoList));
         }
 
         private void BtnEnviar(object sender, EventArgs e)
@@ -181,10 +199,42 @@ namespace Exercicio_V
 
                 if (Jogo.historicoTentativas.Count != 0)
                 {
-                    HistoricoList.Add(Jogo.historicoTentativas[Count]);
-                    historicoList.ItemsSource = HistoricoList;
-                    OnPropertyChanged(nameof(HistoricoList));
+                    CarregarLista();
+
                     Count++;
+                }
+                TaxaVitorias = (Jogo.TotalVitorias * 100) / QuantJogo;
+                TaxaDerrota = Jogo.TotalDerrotas;
+                OnPropertyChanged(nameof(TaxaDerrota));
+                OnPropertyChanged(nameof(TaxaVitorias));
+                switch (TaxaVitorias)
+                {
+                    case float i when i < 20.0f:
+                        Rank = "E";
+                        OnPropertyChanged(nameof(Rank));
+                        break;
+                    case float i when i < 40.0f:
+                        Rank = "D";
+                        OnPropertyChanged(nameof(Rank));
+                        break;
+                    case float i when i < 60.0f:
+                        Rank = "C";
+                        OnPropertyChanged(nameof(Rank));
+                        break;
+                    case float i when i < 80.0f:
+                        Rank = "B";
+                        OnPropertyChanged(nameof(Rank));
+                        break;
+                    case float i when i < 99.0f:
+                        Rank = "A";
+                        OnPropertyChanged(nameof(Rank));
+                        break;
+                    case float i when i == 100.0f:
+                        Rank = "S";
+                        OnPropertyChanged(nameof(Rank));
+                        break;
+                    default:
+                        break;
                 }
                 DisplayAlert("Alert", $"{Jogo.Menssagen}", "OK");
             }
