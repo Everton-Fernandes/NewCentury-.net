@@ -1,0 +1,241 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage
+    x:Class="Exercicio_V.MainPage"
+    xmlns="http://xamarin.com/schemas/2014/forms"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    x:Name="exercicioV"
+    NavigationPage.HasNavigationBar="False">
+
+    <ScrollView>
+        <StackLayout BackgroundColor="#fafafa">
+            <Label
+                Margin="10,50,10,0"
+                FontSize="50"
+                HorizontalOptions="FillAndExpand"
+                HorizontalTextAlignment="Center"
+                Text="Adivinhe o Número (0 - 100)"
+                TextColor="#323232" />
+            <Grid ColumnDefinitions="50*,300*,20*,300*,50*" RowDefinitions="10*,100*,10*">
+                <Button
+                    x:Name="btnPessoa"
+                    Grid.Row="1"
+                    Grid.Column="1"
+                    BackgroundColor="#0B3B60"
+                    Clicked="BtnPessoa"
+                    CornerRadius="5"
+                    FontSize="30"
+                    IsEnabled="{Binding BoolPessoa, Source={x:Reference exercicioV}}"
+                    Text="Pessoa"
+                    TextColor="#DCDCDC" />
+                <Button
+                    x:Name="btnMaquina"
+                    Grid.Row="1"
+                    Grid.Column="3"
+                    BackgroundColor="#0B3B60"
+                    Clicked="BtnMaquina"
+                    CornerRadius="5"
+                    FontSize="30"
+                    IsEnabled="{Binding BoolMaquina, Source={x:Reference exercicioV}}"
+                    Text="Maquina"
+                    TextColor="#DCDCDC" />
+            </Grid>
+            <Grid ColumnDefinitions="30*,100*,10*,100*,10*,100*,30*">
+                <Button
+                    x:Name="btnFacil"
+                    Grid.Column="1"
+                    BackgroundColor="#0B3B60"
+                    Clicked="BtnFacil"
+                    CornerRadius="5"
+                    IsEnabled="{Binding BoolFacil, Source={x:Reference exercicioV}}"
+                    Text="{Binding Facil, Source={x:Reference exercicioV}}" />
+                <Button
+                    x:Name="btnMedio"
+                    Grid.Column="3"
+                    BackgroundColor="#0B3B60"
+                    Clicked="BtnMedio"
+                    CornerRadius="5"
+                    IsEnabled="{Binding BoolMedio, Source={x:Reference exercicioV}}"
+                    Text="{Binding Medio, Source={x:Reference exercicioV}}" />
+                <Button
+                    x:Name="btnDificil"
+                    Grid.Column="5"
+                    BackgroundColor="#0B3B60"
+                    Clicked="BtnDificil"
+                    CornerRadius="5"
+                    IsEnabled="{Binding BoolDificil, Source={x:Reference exercicioV}}"
+                    Text="{Binding Dificil, Source={x:Reference exercicioV}}" />
+            </Grid>
+            <Label
+                Margin="10,0,10,0"
+                FontSize="35"
+                HorizontalOptions="FillAndExpand"
+                HorizontalTextAlignment="Center"
+                Text="Placar"
+                TextColor="#323232" />
+            <Grid ColumnDefinitions="50*,300*,20*,300*,50*" RowDefinitions="10*,100*,10*">
+                <Label
+                    Grid.Row="1"
+                    Grid.Column="1"
+                    BackgroundColor="#DCDCDC"
+                    HorizontalOptions="FillAndExpand"
+                    HorizontalTextAlignment="Center">
+                    <Label.FormattedText>
+                        <FormattedString>
+                            <Span
+                                FontSize="30"
+                                Text="Vitorias: "
+                                TextColor="#323232" />
+                            <Span
+                                FontSize="30"
+                                Text="{Binding Valor, Source={x:Reference exercicioV}}"
+                                TextColor="#323232" />
+                            <Span
+                                FontSize="30"
+                                Text=" %"
+                                TextColor="#323232" />
+                        </FormattedString>
+                    </Label.FormattedText>
+                </Label>
+                <Label
+                    Grid.Row="1"
+                    Grid.Column="3"
+                    BackgroundColor="#DCDCDC"
+                    HorizontalOptions="FillAndExpand"
+                    HorizontalTextAlignment="Center"
+                    TextColor="#323232">
+                    <Label.FormattedText>
+                        <FormattedString>
+                            <Span
+                                FontSize="30"
+                                Text="Derrotas: "
+                                TextColor="#323232" />
+                            <Span
+                                FontSize="30"
+                                Text="{Binding Valor, Source={x:Reference exercicioV}}"
+                                TextColor="#323232" />
+                        </FormattedString>
+                    </Label.FormattedText>
+                </Label>
+            </Grid>
+            <Grid ColumnDefinitions="50*, 620*, 50*">
+                <Frame
+                    Grid.Column="1"
+                    Margin="0"
+                    Padding="0"
+                    BackgroundColor="#DCDCDC"
+                    BorderColor="#323232"
+                    HorizontalOptions="FillAndExpand">
+                    <Label
+                        Margin="0"
+                        Padding="0"
+                        HorizontalOptions="FillAndExpand"
+                        HorizontalTextAlignment="Center"
+                        TextColor="#323232">
+                        <Label.FormattedText>
+                            <FormattedString>
+                                <Span
+                                    FontSize="25"
+                                    Text="Rank: "
+                                    TextColor="#323232" />
+                                <Span
+                                    BackgroundColor="Red"
+                                    FontSize="25"
+                                    Text="{Binding Rank, Source={x:Reference exercicioV}}"
+                                    TextColor="#323232" />
+                            </FormattedString>
+                        </Label.FormattedText>
+                    </Label>
+                </Frame>
+            </Grid>
+            <Grid
+                Margin="0,30,0,0"
+                ColumnDefinitions="200*, 320*, 200*"
+                HeightRequest="100">
+                <Frame
+                    Grid.Column="1"
+                    Margin="0"
+                    Padding="0"
+                    BorderColor="#323232"
+                    CornerRadius="8">
+
+                    <Entry
+                        Margin="0"
+                        Background="#DCDCDC"
+                        FontSize="30"
+                        HorizontalOptions="FillAndExpand"
+                        HorizontalTextAlignment="Center"
+                        Placeholder="Número"
+                        Text="{Binding Valor, Source={x:Reference exercicioV}}" />
+                </Frame>
+            </Grid>
+            <Button
+                x:Name="btnEnviar"
+                BackgroundColor="#0B3B60"
+                Clicked="BtnEnviar"
+                CornerRadius="5"
+                FontSize="30"
+                HeightRequest="80"
+                HorizontalOptions="Center"
+                Text="Enviar"
+                TextColor="#DCDCDC"
+                WidthRequest="300" />
+            <Label
+                FontSize="30"
+                HorizontalOptions="Center"
+                HorizontalTextAlignment="Center"
+                Text="Historico"
+                TextColor="#323232"
+                WidthRequest="800" />
+            <Frame
+                Margin="0,10,0,20"
+                Padding="0"
+                BorderColor="#323232"
+                CornerRadius="10"
+                HeightRequest="800"
+                HorizontalOptions="Center"
+                WidthRequest="800">
+                <ListView
+                    x:Name="historicoList"
+                    BackgroundColor="#DCDCDC"
+                    SeparatorColor="#323232">
+                    <ListView.ItemTemplate>
+                        <DataTemplate>
+                            <ViewCell>
+                                <Grid ColumnDefinitions="*,*,*,*">
+                                    <Label
+                                        Grid.Column="0"
+                                        FontSize="20"
+                                        HorizontalOptions="Center"
+                                        HorizontalTextAlignment="Center"
+                                        Text="{Binding CodJogador}"
+                                        TextColor="#323232" />
+                                    <Label
+                                        Grid.Column="1"
+                                        FontSize="20"
+                                        HorizontalOptions="Center"
+                                        HorizontalTextAlignment="Center"
+                                        Text="{Binding NumTentativa}"
+                                        TextColor="#323232" />
+                                    <Label
+                                        Grid.Column="2"
+                                        FontSize="20"
+                                        HorizontalOptions="Center"
+                                        HorizontalTextAlignment="Center"
+                                        Text="{Binding DataHoraTentativa}"
+                                        TextColor="#323232" />
+                                    <Label
+                                        Grid.Column="3"
+                                        FontSize="20"
+                                        HorizontalOptions="Center"
+                                        HorizontalTextAlignment="Center"
+                                        Text="{Binding Resultado}"
+                                        TextColor="#323232" />
+                                </Grid>
+                            </ViewCell>
+                        </DataTemplate>
+                    </ListView.ItemTemplate>
+                </ListView>
+            </Frame>
+        </StackLayout>
+    </ScrollView>
+</ContentPage>

@@ -1,0 +1,15 @@
+D:\Projetos\DesafioNewCentury\Exercicio-V\Exercicio-V\bin\Debug\netstandard2.0\Exercicio-V.deps.json
+D:\Projetos\DesafioNewCentury\Exercicio-V\Exercicio-V\bin\Debug\netstandard2.0\Exercicio-V.dll
+D:\Projetos\DesafioNewCentury\Exercicio-V\Exercicio-V\bin\Debug\netstandard2.0\ref\Exercicio-V.dll
+D:\Projetos\DesafioNewCentury\Exercicio-V\Exercicio-V\bin\Debug\netstandard2.0\Exercicio-V.pdb
+D:\Projetos\DesafioNewCentury\Exercicio-V\Exercicio-V\obj\Debug\netstandard2.0\Exercicio-V.csproj.AssemblyReference.cache
+D:\Projetos\DesafioNewCentury\Exercicio-V\Exercicio-V\obj\Debug\netstandard2.0\Exercicio-V.GeneratedMSBuildEditorConfig.editorconfig
+D:\Projetos\DesafioNewCentury\Exercicio-V\Exercicio-V\obj\Debug\netstandard2.0\App.xaml.g.cs
+D:\Projetos\DesafioNewCentury\Exercicio-V\Exercicio-V\obj\Debug\netstandard2.0\MainPage.xaml.g.cs
+D:\Projetos\DesafioNewCentury\Exercicio-V\Exercicio-V\obj\Debug\netstandard2.0\Exercicio-V.AssemblyInfoInputs.cache
+D:\Projetos\DesafioNewCentury\Exercicio-V\Exercicio-V\obj\Debug\netstandard2.0\Exercicio-V.AssemblyInfo.cs
+D:\Projetos\DesafioNewCentury\Exercicio-V\Exercicio-V\obj\Debug\netstandard2.0\Exercicio-V.csproj.CoreCompileInputs.cache
+D:\Projetos\DesafioNewCentury\Exercicio-V\Exercicio-V\obj\Debug\netstandard2.0\XamlC.stamp
+D:\Projetos\DesafioNewCentury\Exercicio-V\Exercicio-V\obj\Debug\netstandard2.0\Exercicio-V.dll
+D:\Projetos\DesafioNewCentury\Exercicio-V\Exercicio-V\obj\Debug\netstandard2.0\refint\Exercicio-V.dll
+D:\Projetos\DesafioNewCentury\Exercicio-V\Exercicio-V\obj\Debug\netstandard2.0\Exercicio-V.pdb
